@@ -1158,7 +1158,18 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (halvings >= 64)
         return 0;
 
-    CAmount nSubsidy = 100 * COIN;
+    //CAmount nSubsidy = 100 * COIN;
+
+    CAmount nSubsidy;
+                
+        if (nHeight == consensusParams.DevCommunityFundHeight) {
+         nSubsidy = 4000000 * COIN; // 2,012,649.4692013 dev fund - 1,987,350.5307987 for community
+        }
+        else {
+	 nSubsidy = 100 * COIN;
+        }
+
+
     // Subsidy is cut in half every 840,000 blocks which will occur approximately everys 700 days
     nSubsidy >>= halvings;
     return nSubsidy;

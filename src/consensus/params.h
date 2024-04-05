@@ -72,6 +72,8 @@ struct Params {
     bool fPowNoRetargeting;
     int64_t nPowTargetSpacing;
     int64_t lwmaAveragingWindow;
+    int64_t lwmaAveragingWindowV2;
+    int64_t DevCommunityFundHeight;
     int64_t nPowTargetTimespan;
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacing; }
     uint256 nMinimumChainWork;
