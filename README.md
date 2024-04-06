@@ -8,7 +8,7 @@ Specifications:
 - ticker: OBN
 - type: PoW
 - maturity: 41
-- max supply: 168,000,000
+- max supply: 172,000,000
 - p2p port: 2333
 - rpc port: 2332
 - halving: 840,000
