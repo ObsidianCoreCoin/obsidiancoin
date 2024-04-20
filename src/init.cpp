@@ -1269,7 +1269,6 @@ bool AppInitMain(InitInterfaces& interfaces)
                                     "rpcpassword=password\n"
                                     "server=1\n"
                                     "listen=1\n"
-
                                     "daemon=1\n"
                                     "upnp=1\n"
                                     "port=2333\n"

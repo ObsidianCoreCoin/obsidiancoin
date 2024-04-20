@@ -1165,6 +1165,9 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         if (nHeight == consensusParams.DevCommunityFundHeight) {
          nSubsidy = 4000000 * COIN; // 2,012,649.4692013 dev fund - 1,987,350.5307987 for community
         }
+        else if (nHeight == 29400000) {
+         nSubsidy = 100 * COIN; // The last block with a reward is adjusted to 100 to adjust the maximum supply to an exact value of 172,000,000 instead of 171,999,900
+        }
         else {
 	 nSubsidy = 100 * COIN;
         }
